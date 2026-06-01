@@ -387,11 +387,9 @@
       {"id":"S22_003E","name":"Exhaust gas temperature at diesel particulate filter inlet","path":"Emissions","fmt":{"len":16,"bix":0,"div":10,"add":-40,"min":0,"max":1000,"unit":"celsius"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"10A1"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_10A1","name":"Mass airflow sensor voltage","path":"Engine","fmt":{"len":8,"bix":0,"div":50,"min":0,"max":5.1,"unit":"volts"}}]},
-    {"hdr":"7E0","rax":"7E8","cmd":{"22":"10A3"},"freq":0.5,"dbg":true,"signals":[
-      {"id":"S22_10A3","name":"Fuel injector pulse width","path":"Fuel","fmt":{"len":8,"bix":0,"mul":32,"div":125,"min":0,"max":65.28,"unit":"scalar"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"10A6"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_10A6","name":"Accelerator pedal angle","path":"Engine","fmt":{"len":8,"bix":0,"mul":100,"div":255,"min":0,"max":100,"unit":"percent"}}]},
-    {"hdr":"7E0","rax":"7E8","cmd":{"22":"10A7"},"freq":0.5,"dbg":true,"signals":[
+    {"hdr":"7E0","rax":"7E8","cmd":{"22":"10A7"},"freq":0.5,"signals":[
       {"id":"S22_10A7","name":"Fuel temperature","path":"Fuel","fmt":{"len":8,"bix":0,"add":-40,"min":-20,"max":90,"unit":"celsius"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"10AC"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_10AC","name":"Primary boost control","path":"Engine","fmt":{"len":8,"bix":0,"mul":100,"div":255,"min":0,"max":100,"unit":"percent"}}]},
@@ -399,8 +397,8 @@
       {"id":"S22_10B2","name":"Alternator duty cycle","path":"Electrical","fmt":{"len":8,"bix":0,"min":0,"max":100,"unit":"percent"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"10E3"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_10E3","name":"Memorized cruise speed","path":"Cruise control","fmt":{"len":8,"bix":0,"min":0,"max":255,"unit":"kilometersPerHour"}}]},
-    {"hdr":"7E0","rax":"7E8","cmd":{"22":"1116"},"freq":0.5,"dbg":true,"signals":[
-      {"id":"S22_1116","name":"Final injection amount","path":"Fuel","fmt":{"len":16,"bix":0,"div":256,"min":0,"max":100,"unit":"scalar"}}]},
+    {"hdr":"7E0","rax":"7E8","cmd":{"22":"1116"},"freq":0.5,"signals":[
+      {"id":"S22_1116","name":"Final injection amount","path":"Fuel","fmt":{"len":16,"bix":0,"div":256,"min":0,"max":256,"unit":"scalar"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"111B"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_111B","name":"Target exhaust gas recirculation valve opening angle","path":"Emissions","fmt":{"len":8,"bix":0,"add":-50,"min":0,"max":90,"unit":"degrees"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"111C"},"freq":0.5,"dbg":true,"signals":[
@@ -439,14 +437,14 @@
       {"id":"S22_114C","name":"Estimated diesel particulate filter temperature","path":"Emissions","fmt":{"len":8,"bix":0,"mul":5,"add":-40,"min":0,"max":1000,"unit":"celsius"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"114D"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_114D","name":"Soot accumulation ratio","path":"Emissions","fmt":{"len":8,"bix":0,"min":0,"max":150,"unit":"percent"}}]},
-    {"hdr":"7E0","rax":"7E8","cmd":{"22":"114E"},"freq":0.5,"dbg":true,"signals":[
-      {"id":"S22_114E","name":"Oil dilution ratio","path":"Fluids","fmt":{"len":8,"bix":0,"min":0,"max":15,"unit":"percent"}}]},
+    {"hdr":"7E0","rax":"7E8","cmd":{"22":"114E"},"freq":0.5,"signals":[
+      {"id":"S22_114E","name":"Oil dilution ratio","path":"Fluids","fmt":{"len":8,"bix":0,"min":0,"max":100,"unit":"percent"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"1155"},"freq":30,"dbg":true,"signals":[
       {"id":"S22_1155","name":"Estimated distance to oil change","path":"Fluids","fmt":{"len":8,"bix":0,"mul":100,"min":0,"max":15000,"unit":"kilometers"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"1156"},"freq":60,"dbg":true,"signals":[
       {"id":"S22_1156","name":"Distance since last diesel particulate filter regeneration","path":"Emissions","fmt":{"len":16,"bix":0,"min":0,"max":5000,"unit":"kilometers"}}]},
-    {"hdr":"7E0","rax":"7E8","cmd":{"22":"1157"},"freq":60,"dbg":true,"signals":[
-      {"id":"S22_1157","name":"Diesel particulate filter regeneration count","path":"Emissions","fmt":{"len":16,"bix":0,"min":0,"max":1000,"unit":"scalar"}}]},
+    {"hdr":"7E0","rax":"7E8","cmd":{"22":"1157"},"freq":60,"signals":[
+      {"id":"S22_1157","name":"Diesel particulate filter regeneration count","path":"Emissions","fmt":{"len":16,"bix":0,"min":0,"max":65535,"unit":"scalar"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"1158"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S22_1158","name":"Micro-Q learning cylinder 1","path":"Engine","fmt":{"len":8,"bix":0,"div":200,"add":-0.64,"min":-0.64,"max":0.635,"unit":"scalar"}}]},
     {"hdr":"7E0","rax":"7E8","cmd":{"22":"1159"},"freq":0.5,"dbg":true,"signals":[
