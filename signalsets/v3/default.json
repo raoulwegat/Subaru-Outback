@@ -1,7 +1,5 @@
 {
   "commands": [
-    {"hdr":"7DF","rax":"7E8","cmd":{"09":"02"},"freq":30,"dbg":true,"signals":[
-      {"id":"S09_02","name":"Vehicle Identification Number","path":"Vehicle","fmt":{"len":144,"bix":8,"unit":"scalar"}}]},
     {"hdr":"7DF","rax":"7E8","cmd":{"01":"00"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S01_00","name":"PIDs supported 01-20","path":"OBD","fmt":{"len":32,"bix":0,"max":4294967295,"unit":"hex"}}]},
     {"hdr":"7DF","rax":"7E8","cmd":{"01":"01"},"freq":0.5,"dbg":true,"signals":[
@@ -218,7 +216,7 @@
     {"hdr":"7DF","rax":"7E8","cmd":{"01":"5D"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S01_5D","name":"Fuel injection timing","path":"Fuel","fmt":{"len":16,"bix":0,"div":128,"add":-210,"min":-210,"max":301.992,"unit":"degrees"}}]},
     {"hdr":"7DF","rax":"7E8","cmd":{"01":"5E"},"freq":0.5,"dbg":true,"signals":[
-      {"id":"S01_5E","name":"Engine fuel rate","path":"Fuel","fmt":{"len":16,"bix":0,"div":20,"min":0,"max":3276.75,"unit":"litersPerHour"}}]},
+      {"id":"S01_5E","name":"Engine fuel rate","path":"Fuel","fmt":{"len":16,"bix":0,"div":20,"min":0,"max":3276.75,"unit":"scalar"}}]},
     {"hdr":"7DF","rax":"7E8","cmd":{"01":"5F"},"freq":0.5,"dbg":true,"signals":[
       {"id":"S01_5F","name":"Emission requirements","path":"Emissions","fmt":{"len":8,"bix":0,"max":255,"unit":"hex"}}]},
     {"hdr":"7DF","rax":"7E8","cmd":{"01":"60"},"freq":0.5,"dbg":true,"signals":[
